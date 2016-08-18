@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.block {
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		position: relative;
+	}
+</style>	
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+</head>
+<body>
+	<div class="block"></div>
+	<input type="button" value="GO" id="go">
+	
+<script type="text/javascript">
+$("#go").on('click', function(){
+    $(".block:first").animate({ left: 100}, {
+      duration: 1000,
+      step: function(now, fx){ 
+    	  debugger;
+     	$(".block:gt(0)").css("left", 0);
+     	console.log($(".block:gt(0)").css("left", 0));
+      }
+    });
+});
+
+
+</script>
+</body>
+</html>
