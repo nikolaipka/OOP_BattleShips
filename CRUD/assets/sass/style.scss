@@ -1,0 +1,92 @@
+body {
+	background-color: #7EC0EE;
+	
+	.layout {
+	border: 2px solid white;
+	margin: 75px auto;
+	width: 300px;
+	height: 450px;	
+	
+		p {
+	 	color:red;
+	 	text-align: center;
+	 	font-weight: bold;
+	 	display: none;
+ 		}
+	
+		form {
+		margin-top: 150px;
+		display: block;
+		text-align: center;
+			
+			.input {
+			 background: transparent;
+			 color: white;
+			 border-radius: 5px;
+			 margin: 5px;
+			}
+		
+
+		
+			label {
+			color: white;
+			font-size: 2em;
+			}
+		
+			#btn {
+			display: block;
+			margin: 5px auto;
+			background-color: black;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			width: 60px;
+			}
+		}		
+	
+	}
+}
+
+#table {
+	width: 700px;
+	color: white;
+	margin: auto;
+	display: none;
+
+	h1 {
+	margin-left: 300px;
+	
+		i {
+		float: right;
+		}
+	}
+
+	
+	table, td, th, tr{
+	border: 1px solid white;
+	border-collapse: collapse;
+	text-align: center;
+	}		
+}
+
+h1 {
+color: white;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    text-align: center;
+ }
+ 
+ #adding-form-page {
+ 	display:none
+ }
+ 
+#add {
+	cursor: pointer;
+}
+	
+img {
+	width: 300px;
+	position: absolute;
+}		

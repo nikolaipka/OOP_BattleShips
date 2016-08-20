@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<?php
+session_start();
+?>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" type="text/css">
+<script type="text/javascript" src="assets/js/jQ.js"></script>
+<script type="text/javascript" src="assets/js/ajax.js"></script>
+</head>
+<body>
+	<img src="assets/images/logo.png">
+	<div id="login" class="form layout">
+		<form action="" method="post">
+			<label for="username">Username:</label><input class="input" id="name">
+			<label for="password">Password:</label><input type="password" class="input" id="pwd">
+			<input type="submit" value="Login" id="btn">
+		</form>
+		<p id="warning">Wrong username or password</p>
+	</div>
+	
+	<div id="table">
+		<h1 id="title">FightClub<i class="fa fa-plus-square fa-1x" aria-hidden="true" id="addbtn"></i></h1>		
+		<table style="width:700px" id="grid">
+		  <tr>
+		  	<th>#</th>
+		    <th>Nick</th>
+		    <th>Class</th> 
+		    <th>Subclass</th>
+		    <th>Action</th>
+		   <!--<th><i class="fa fa-minus-square fa-2x" aria-hidden="true"></i></th>
+		    <th><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></th>   --> 
+		  </tr>
+		</table>		
+	</div>
+	<div id="adding-form-page" class="layout">
+		<form action="" method="post" id="adding-form">
+			<h1 id="title">Add</h1>
+			<input type="text" class="input" placeholder="Nick" name='nick'>
+			<input type="text" class="input" placeholder="Class" name ='class' >
+			<input type="text" class="input" placeholder="Subclass" name='subclass'>
+			<input type="submit" value="Ok" id="btn" class="btn2">
+		</form>
+	</div>
+	
+
+</body>
+</html>
