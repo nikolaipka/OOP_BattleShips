@@ -1,1 +1,0 @@
-var _priceForAMinute = 10;
