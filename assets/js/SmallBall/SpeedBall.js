@@ -8,6 +8,6 @@ SpeedBall.prototype = Object.create(SmallBall.prototype);
 SpeedBall.prototype.constructor = SpeedBall;
 
 
-SpeedBall.prototype.giveBonus = function (me) {
-	me.setSpeed(me.getSpeed() * 2);
+SpeedBall.prototype.giveBonus = function(userball) {
+	userball.speed *= 2;
 }
