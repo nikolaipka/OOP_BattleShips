@@ -1,5 +1,19 @@
 @CHARSET "UTF-8";
+body {
+    margin: 60px auto;
+    width: 70%;
+    max-width: 950px;
+}
 
-canvas {
-	background-color: black;
+#container {
+	position:relative;
+	margin:0 auto 2em auto;
+}
+
+#container div {
+	position:absolute;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;       
+	border: 1px solid #ddd;
 }
